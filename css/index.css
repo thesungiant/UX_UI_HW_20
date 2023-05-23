@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+
+/*custom scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F2E7DC
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #AA98CB;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: Normal;
+}
+
+.logo {
+  width: 100%;
+  height: 50px;
+  padding-bottom: 0.5%;
+  text-align: left;
+  background-color: #AA98CB;
+}
+
+.logoimg {
+  width: 80px;
+  height: auto;
+}
+
+.nav {
+  width: 85%;
+  padding: 1px;
+  background-color: #AA98CB;
+  height:1px;
+  text-align: right;
+}
+
+.ul {
+  width: 50%;
+  margin-left: auto;
+  height:1px;
+  background-color: #AA98CB;
+}
+
+.nav-link {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+h1 {font-size: 50px;}
+p {font-size: 25px;}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: url("../images/flowers.png") no-repeat;
+  height:400px;
+  padding: 50px;
+  background-size:cover;
+  color: #F2E7DC;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.case-study-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80px;
+  padding: 50px;
+  background-size:cover;
+  background-color: #5B536B;
+  color: #F2E7DC;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.my-skills-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:80px;
+  padding: 50px;
+  background-size:cover;
+  background-color: #5B536B;
+  color: #F2E7DC;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+  background-color: #AA98CB;
+}
+
+.footer-block {
+  display:inline-block;
+  vertical-align: top;
+  padding: 1px;
+  width:95%;
+  line-height:30px;
+}
+
+.footerpic {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: end;
+  align-items: top;
+  flex-direction: row;
+  vertical-align: top;
+  background-color: #AA98CB;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  list-style: none;
+}
+
+.case-studies {
+  display: grid;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+  width: 100%;
+  grid-template-columns: 397px 440px 440px;
+  grid-template-rows: 428.5px 428.5px 520px;
+  background-color: #F2E7DC;
+  grid-template-areas:
+    "FT DOL DOL"
+    "FT DOL DOL"
+    "ACA ACA ACA";
+  align-items: center;
+  justify-content: center;
+}
+
+.FT {
+  padding: 10px;
+  grid-area: FT;
+  cursor: pointer;
+}
+
+.FThover {
+  padding: 10px;
+  grid-area: FT;
+  cursor: pointer;
+  opacity: 0%;
+}
+
+.FThover:hover {
+  opacity: 100%
+}
+
+.ACA {
+  padding: 10px;
+  grid-area: ACA;
+  cursor: pointer;
+}
+
+.ACAhover {
+  padding: 10px;
+  grid-area: ACA;
+  cursor: pointer;
+  opacity: 0%;
+}
+
+.ACAhover:hover {
+  opacity: 100%
+}
+
+.DOL {
+  padding: 10px;
+  grid-area: DOL;
+  cursor: pointer;
+}
+
+.DOLhover {
+  padding: 10px;
+  grid-area: DOL;
+  cursor: pointer;
+  opacity: 0%;
+}
+
+.DOLhover:hover {
+  opacity: 100%
+}
+
+.dots {
+  position: absolute;
+  margin-right: 5%;
+  top: 400px;
+  width: 250px;
+  right: 0;
+}
+
+.skills-flexContainer {
+  display: flex;
+  flex-direction: row;
+  color: #5B536B;
+  background-color: #F2E7DC;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skills-flexContainer img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-flexContainer h2 {
+  text-align:center;
+  font-weight: Normal;
+  font-size: 30px;
+}
+
+.skills-flexContainer p {
+  font-size: 20px;
+}
+
+.skills-flexContainer div {
+  width: 33%;
+  margin: 50px;
+}
+
+.connect {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  color: #F2E7DC;
+  background-color:  #5B536B; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.connect h2 {
+  font-weight: Normal;
+  font-size: 30px;
+  margin: 60px;
+  margin-bottom: 20px;
+}
+
+.connect p {
+  font-size: 20px;
+  margin: 30px;
+}
+
+.arrow, .arrow2 {
+  display: block;
+  width: 88px;
+  height: 88px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  background-image: url(../images/arrow.png);
+}
+
+.arrow:hover, .arrow2:hover {
+  display: block;
+  width: 88px;
+  height: 88px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  background-image: url(../images/arrow2.png);
+}
+
+
+.BTT-flex-container {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  background-color: #5B536B; 
+}
+
+.back-to-top {
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: black;
+  background-color: #AA98CB; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.back-to-top:hover {
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: black;
+  background-color: #CEBEEC;
+}
+
+@media only screen and (max-width: 800px) {
+  /* I know there are issues with the responsiveness in other parts of the site layout, I'll be fixing those in the future!
+  The "My Skills" row does change to a column as requested in the assignment document though :) */
+
+
+  .skills-flexContainer {
+    flex-direction: column;
+  }
+
+  .skills-flexContainer div {
+    width: 95%;
+    margin: 20px;
+  }
+
+  .dots {
+    display:none;
+  }
+
+  .FT, .FThover {
+    width: 50%;
+    height: auto;
+  }
+
+  .DOL, .ACA, .DOLhover, .ACAhover {
+    width: 90%;
+    height: auto;
+  }
+
+  .case-studies {
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(10%);
+    background-color: #F2E7DC;
+    grid-template-areas:
+      "FT"
+      "DOL"
+      "ACA";
+    justify-items: center;
+  }
+
+  .nav {
+    width: 60%
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  .FT, .FThover {
+    width: 30%;
+    height: auto;
+  }
+
+  .DOL, .ACA, .DOLhover, .ACAhover {
+    width: 50%;
+    height: auto;
+  }
+
+  .dots {
+    display:none;
+  }
+
+  .case-studies {
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(10%);
+    background-color: #F2E7DC;
+    grid-template-areas:
+      "FT"
+      "DOL"
+      "ACA";
+    justify-items: center;
+  }
+}
+
+.study-titles {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: #F2E7DC;
+}
+.study-titles a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #5B536B;
+}
+
+.study-titles a:hover {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #AA98CB;
+}
