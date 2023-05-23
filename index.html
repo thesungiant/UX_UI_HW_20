@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="css/index.css" type="text/css" rel="stylesheet">
         <title>Portfolio - Thomas Howard</title>
     </head>
@@ -21,76 +22,111 @@
                 </div>
             </div>
         </header>
-        <section class="heroImg">
-            <div class="hero">
-                <h1 class="herotext">Hi! I'm Thomas.</h1>
-                <p class="herotext">I'm an artist and designer working in UX/UI. I specialize in empathetic, <br> user-centered UI solutions and detailed, elegant prototypes.</p>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+            <h1 class="display-4">US Department of Labor Navigation Redesign</h1>
+            <p class="lead">The US Department of Labor needs a more user-friendly layout and navigation, allowing users to more easily accomplish the most common goals of using the DOL site. To do so, I simplified the navigation header, organized secondary navigation links using alphabetization and grouping of related content, and incorporated better chunking on the homepage.</p>
             </div>
-        </section>
-        <section class="case-study-link">
-            <img class="dots" src="images/dots.png">
-            <div class="content">
-                <h2>Check out my case studies:</h2>
-                <section class="arrow"></section>
-            </div>
-        </section>
-        <div class="study-titles">
-            <a href="#">Friendly Traveler: Mobile Travel App</a>
-            <a href="#">US Department of Labor Redesign</a>
-            <a href="#">Alley Cat Allies Redesign</a>
+            <!--Jumbotron bootstrap component used above-->
         </div>
-        <section class="case-studies">
-            <img class="FT" src="images/friendly-traveler.png" alt="Friendly Traveler">
-            <img class="FThover" src="images/friendly-traveler-hover.png" alt="Friendly Traveler">
-            <img class="DOL" src="images/us-dol.png" alt="US Department of Labor">
-            <img class="DOLhover" src="images/us-dol-hover.png" alt="US Department of Labor">
-            <img class="ACA" src="images/ACA.png" alt="Alley Cat Allies">
-            <img class="ACAhover" src="images/ACA-hover.png" alt="Alley Cat Allies">
-            <!-- My Work Section Constructed using CSS Grid -->
-        </section>
-        <section class="my-skills-link">
-            <div class="content">
-                <h2>My Skillset:</h2>
-                <section class="arrow2"></section>
-            </div>
-        </section>
-        <section class="my-skills">
-            <div class="skills-flexContainer">
-                <div>
-                    <img src="images/research.png">
+        <section class="research">
+            <h3>Research Methodology:</h3>
+            <p>
+                I began by performing a heuristic evaluation, usability annotations, and conducting five zoom interviews to see how users accomplish tasks on the website. These insights were organized in an affinity diagram and a user persona was drafted. Issues were identified with the amount of links on the webpage and the layout of the forms page in particular. It was difficult for users to find what they were looking for due to lots of needless information and organizational confusion. To fix this I would need to cut through the noise and create a clear user path.
+            </p>
+            <div class="research-methodology">
+                <p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#annotations" aria-expanded="false" aria-controls="collapseExample">
+                    Annotations Sample
+                    </button>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#cre" aria-expanded="false" aria-controls="collapseExample">
+                    Color Readability Eval
+                    </button>
+                </p>
+                <div class="collapse" id="annotations">
                     <br>
-                    <h2>User Research</h2>
-                    <br>
-                    <p>My approach to user research is centered on empathy towards the user's desires, tastes and concerns. It's not enough to just ask questions and confirm initial assumptions - I try to seek out novel insights that could not have been predicted prior.</p>
+                    <div class="card card-body">
+                        <image src="images/annotations.png"></image>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/wireframing.png">
+               <div class="collapse" id="cre">
                     <br>
-                    <h2>Wireframing</h2>
-                    <br>
-                    <p>Wireframing is where a vision reaches pen and paper, which makes effectively translating the idea a crucial requirement. I work carefully and mindfully with the prototype and final product in mind from the start.</p>
-                </div>
-                <div>
-                    <img src="images/prototyping.png">
-                    <br>
-                    <h2>Prototyping</h2>
-                    <br>
-                    <p>The primary purpose of a prototype is to test the feel and practicality of a product. This is why a prudent approach to detail is necessary. I focus on functionality, revealing exactly what is necessary to make the product into a reality.</p>
+                    <div class="card card-body">
+                        <image src="images/cre.png"></image>
+                    </div>
                 </div>
             </div>
-             <!--  My UX Skills section coded using CSS flex -->
+            <!--Collapse bootstrap components used above-->
         </section>
-        <section class="connect">
-            <div class="content">
-                <p>TOOLS I USE: Paper and Pencil | Figma | InVision | Adobe Suite | Miro | Google Drive </p>
-                <h2>Let's connect:</h2>
+        <section class="definition">
+            <h3>Definition and Ideation:</h3>
+            <p>
+                User Goals: 
+                <li>Locating DOL forms</li>
+                <li>Acquiring information about labor regulations</li>
+                <li>Staying up to-date with recent developments in US labor.</li>
+            </p>
+            <br>
+            <p>
+                Identified Problem:
+                <br>
+                The US Department of Labor website needs to consolidate a wide variety of services and info for its users. Extensive usability testing facilitated a cleaner, more organized navigation layout.
+            </p>
+            <br>
+            <p>
+                Solution:
+                <br>
+                Create a more user-friendly layout and navigation, allowing users to more easily accomplish the most common goals of using the DOL site.
+            </p>
+            <br>
+            <h3>Card Sort</h3>
+            <br>
+            <div class="cardsort">
+                <img src="images/cardsort.png"></img>
+            </div>
+            <br>
+            <p>
+                To help the user accomplish the identified goals, I planned to simplify the navigation header, organize secondary navigation links using alphabetization and grouping of related content, and incorporate better chunking on the homepage.
+            </p>
+        </section>
+        <section class="prototype">
+            <h3>Prototyping:</h3>
+            <p>
+                I created lo-fi wireframes for the navigation, and tried to minimize the amount of content on the homepage, so that users could more easily explore the page. A new navigational system was implemented. Visual polish and a clean, relaxing color scheme based on my style guide was applied. I felt that the webpage could use some calming colors, as users often visited the DOL because they were stressed about their work, or going through unemployment. Helping them feel at ease was imperative.
+            </p>
+            <br>
+            <h3>Lo-fi Wireframes:</h3>
+            <br>
+            <div class="cardsort">
+                <img src="images/homepage-wireframe.png"></img>
             </div>
         </section>
-        <div class="BTT-flex-container">
-            <div class="back-to-top">
-                Back to top
+        <section class="definition">
+            <h3>Iteration and Testing:</h3>
+            <p>
+                User testing revealed there was still some work to do. Primarily with the carousel on the homepage, which needed more user-friendly interaction. Instead of small clickable bubbles to alternate between "featured stories," larger arrows were created instead. Navigation was fully implemented, with hoverable results for quicker responsive feedback for the user.
+            </p>
+        </section>
+        <section class="finalprototype">
+            <h3>Final Prototype:</h3>
+            <div class="final-images">
+                <img src="images/home1.png"><img src="images/home2.png">
             </div>
-        </div>
+            <p>
+            Implemented Changes:
+            <br>
+            <li>Re-organized navigation header with “topics” dropdown organized based on category. Other dropdowns were consolidated based on card-sort testing. Key topics are first category instead of a separate list that was on the right side and easily missed during user testing. Spanish resources are placed in the header instead of hidden in footer and header dropdowns. </li>
+            <li>Footer is simplified from list 20+ links into 2 categorized dropdowns. Icons used for social media links.</li>
+            <li>Implemented cleaner layout of quick links, blog, news and twitter feed. Improved chunking allows for easier navigation of homepage.</li>
+            <li>Converted hero image graphic into a carousel for featured stories, allowing for large attention-grabbing images without overwhelming the page. Carousel allows for more economical consolidation of information contained on original homepage.</li>
+            </p>
+        </section>
+        <section class="definition">
+            <h3>Conclusions:</h3>
+            <p>
+                Redesigning the UI for the Department of Labor website was an invaluable learning experience. I was most surprised by how important the insights I received from testing proved to be, as they fully guided my efforts. The issues identified in that phase became the problems I needed to solve in the revised product. I initially expected to focus on visual presentation, but during the redesign process I found that the most crucial aspect turned out to be functionality and organization. Navigation structures are the means by which a user finds what they need and accomplishes their goals, so they must be as intuitive and logical as possible.
+            </p>
+        </section>
         <footer>
             <ul class="footer-block">
                 <section class="flex-footer">
@@ -102,5 +138,14 @@
             </ul>
         </footer>
     </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </html>
